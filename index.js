@@ -14,7 +14,7 @@ const setWeatherData= data=>{
    description:data.weather[0].main,
    humidity:data.main.humidity,
    pressure:data.main.pressure,
-   temperature:data.main.temp,
+   temperature:data.main.temp.toFixed(),
    date:getDate(),
     }
 

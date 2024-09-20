@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-h1{color: #709775;
+h1{color: #ffffff;
 font-size: 80px;
 margin-bottom: 100px;}
 
@@ -100,6 +100,10 @@ background-color:#709775;
     box-shadow: 0 2.5em 0 0;
   }
 }
+.star{
+  height: 100px;
+  width: 100px;
+}
 .fondo2{
 background-color: #116459;
 width: 100%;
@@ -109,16 +113,59 @@ margin-top: 100px;
 .fondo3{
     width: 100px;
 height: 100px;
-    background-color: rgb(221, 202, 138);
+    background-color: rgb(243, 228, 179);
     border-radius: 100%;
-    box-shadow: 9px 8px 20px rgba(241, 191, 150, 0.842);
+    box-shadow: 9px 8px 20px rgba(241, 180, 130, 0.842);
 }
+
 .fondo4{ 
     display: flex;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: row
+    ;justify-content: center;
     width: 100%;
 height: 30%;
-background-color: #23b0c98a;
-padding-bottom: 10px;
+background-color: #00000096;
+
+
 }
+.img-nube{
+  position: relative;
+}
+.img-n{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+/* Define la animación */
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100vh - 10px); /* Mueve la imagen al final de la pantalla menos su tamaño */
+  }
+}
+.img-nube{
+  margin: 1px;
+  animation: move 40s linear  infinite;
+  height: 300px;
+  width: 300px;
+  opacity: 0.6;
+  max-width: 100vw;
+}
+.img-nube1{
+  margin: 1px;
+  animation: move 80s linear  infinite;
+  width: 200px;
+  height: 200px;
+  opacity: 0.6;
+}
+.img-nube2{
+  margin: 1px;
+  animation: move 120s linear  infinite;
+  width: 150px;
+  height: 150px;
+  opacity: 0.7;
+};
